@@ -209,3 +209,11 @@ nav {
   align-self: center;
   text-align: center;
 }
+ControlledCarousel {
+  height: 30vmin;
+}
+hr {
+  background-color: black;
+  margin: 0 5%;
+  height: 1px;
+}
