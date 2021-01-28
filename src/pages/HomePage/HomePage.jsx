@@ -5,7 +5,7 @@ import Navbar from '../../components/NavBar/NavBar';
 import AuthPage from '../../pages/AuthPage/AuthPage';
 import ControlledCarousel from '../../components/Carousel/Carousel';
 import SaleItems from '../../components/SaleItems/SaleItems';
-
+import Footer from '../../components/Footer/Footer';
 
 
 export default function HomePage({user, setUser}){
@@ -20,6 +20,7 @@ export default function HomePage({user, setUser}){
         </Switch>
         <ControlledCarousel />
         <SaleItems />
+        <Footer />
         </>
     );
 }

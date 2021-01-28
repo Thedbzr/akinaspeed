@@ -2,6 +2,7 @@ import React from 'react';
 import './SaleItems.css'
 import { Container, Row, Col} from 'react-bootstrap';
 
+
 export default function SaleItems() {
     return (
         <>

@@ -217,3 +217,23 @@ hr {
   margin: 0 5%;
   height: 1px;
 }
+#footerContainer{
+  background-color: black !important;
+  color: gray;
+  width: 100vw;
+  padding: 5vmin 20vmin 5vmin 20vmin;
+  margin-top: 10vmin;
+}
+.rowOne {
+  margin-bottom: 8vmin;
+}
+.rowTwo{
+  margin: 0 auto;
+}
+.rowThree{
+  margin: auto;
+  color: white;
+}
+.rThreeP {
+  display: inline-block;
+}
