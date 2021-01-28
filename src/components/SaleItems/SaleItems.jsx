@@ -1,11 +1,12 @@
 import React from 'react';
 import './SaleItems.css'
+import { Container, Row, Col} from 'react-bootstrap';
 
 export default function SaleItems() {
     return (
         <>
             <main>
-                <h2>Toyota 86,FR-S,BRZ PERFORMANCE PARTS & ACCESSORIES!</h2>
+                <h2>TOYOTA 86,FR-S,BRZ PERFORMANCE PARTS & ACCESSORIES!</h2>
                 <hr />
                 <br />
                 <h6>
@@ -15,7 +16,19 @@ export default function SaleItems() {
                     So what are you waiting for go ahead and find your next mods.
                 </h6>
                 <br />
-                <hr />
+                <hr className="btmHr"/>
+                <Container className="saleGrid" id="slGrid">
+                    <Row>
+                        <Col><img src="https://i.imgur.com/QPE6Lq0.png" /></Col>
+                        <Col><img src="https://i.imgur.com/K6ELr9Y.png" /></Col>
+                        <Col><img src="https://i.imgur.com/QIhnCp0.png"  /></Col>
+                    </Row>
+                    <Row>
+                        <Col className="btmRow"><img src="https://i.imgur.com/AHrkFbT.png" /></Col>
+                        <Col className="btmRow"><img src="https://i.imgur.com/TNGvbnk.png" /></Col>
+                        <Col className="btmRow"><img src="https://i.imgur.com/7jjmb0q.png" /></Col>
+                    </Row>
+                </Container>
             </main>
         </>
     );

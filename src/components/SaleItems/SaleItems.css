@@ -4,3 +4,24 @@ h2 {
 h6 {
     padding: 0 10%;
 }
+.btmHr {
+  background-color: black;
+  margin: 0 8% 10vmin 0;
+  height: 1px;
+}
+#slGrid img {
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  padding: 1px 4px 1px;
+  color: #000;
+  text-decoration: none;
+  padding: 5%;
+}
+.btmRow {
+  margin-top: 10px;
+}
+.saleGrid{
+  display: block;
+}
