@@ -158,6 +158,7 @@ button[type="submit"] {
   --purple: #6f42c1;
   --pink: #e83e8c;
   --red: #dc3545;
+  --redBright: #FF1616;
   --orange: #fd7e14;
   --yellow: #ffc107;
   --green: #28a745;
@@ -223,6 +224,9 @@ hr {
   width: 100vw;
   padding: 5vmin 20vmin 5vmin 20vmin;
   margin-top: 10vmin;
+  left:0;
+  bottom:0;
+  right:0;
 }
 .rowOne {
   margin-bottom: 8vmin;
@@ -236,4 +240,11 @@ hr {
 }
 .rThreeP {
   display: inline-block;
+}
+.authForm{
+  height: 75vh;
+}
+.button {
+  background-color: var(--redBright);
+  color: white;
 }

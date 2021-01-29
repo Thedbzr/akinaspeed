@@ -1,11 +1,12 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { Instagram, Facebook, Twitter} from 'react-bootstrap-icons'
+import { Link } from 'react-router-dom'; 
 
 export default function Footer() {
     return (
         <>
-            <div id="footerContainer" className="justify-content-center">
+            <div id="footerContainer" className="footer">
                 <Row className="rowOne">
                     <Col>
                         <img
@@ -21,7 +22,7 @@ export default function Footer() {
                     <Col><p>Keeping Enthusiasts Engaged In The Tuner Scene One Part At A Time.</p></Col>
                 </Row>
                 <Row className="rowFour">
-                <Col>&copy; {new Date().getFullYear()} Copyright: <a href="">AkinaSpeed.com </a></Col>
+                <Col>&copy; {new Date().getFullYear()} Copyright: <Link to="/">AkinaSpeed.com </Link></Col>
                 </Row>
             </div>
         </>

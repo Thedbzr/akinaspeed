@@ -6,7 +6,9 @@ h6 {
 }
 .btmHr {
   background-color: black;
-  margin: 0 8% 10vmin 0;
+  margin-left: 25vmin;
+  margin-right: 25vmin;
+  margin-bottom: 5vmin;
   height: 1px;
 }
 #slGrid img {
