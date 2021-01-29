@@ -1,11 +1,19 @@
+const mongoose = require('mongoose');
 require('dotenv').config();
-require('./config/database');
+
 
 const Category = require('./models/category');
 const Item = require('./models/item');
 
 (async function() {
 
+  await mongoose.connect(process.env.DATABASE_URL, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+  });
+  
   await Category.deleteMany({});
   const categories = await Category.create([
     {name: 'Apperal / Accessories', sortOrder: 10},
