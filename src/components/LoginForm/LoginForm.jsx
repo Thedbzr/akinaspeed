@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import * as usersService from '../../utilities/users-service';
 
-export default function LogIn({ setUser , setShowLogin, showLogin }) {
+export default function LogIn({ setUser, setShowLogin, showLogin }) {
   const [credentials, setCredentials] = useState({
     email: '',
     password: ''
@@ -60,7 +60,7 @@ export default function LogIn({ setUser , setShowLogin, showLogin }) {
           </div>
           <div className="field">
             <p className="control has-icons-left">
-              <input className="input" placeholder="Password" type="password" name="password" value={credentials.password} onChange={handleChange} required  />
+              <input className="input" placeholder="Password" type="password" name="password" value={credentials.password} onChange={handleChange} required />
               <span className="icon is-small is-left">
                 <i className="fas fa-lock"></i>
               </span>
@@ -68,12 +68,13 @@ export default function LogIn({ setUser , setShowLogin, showLogin }) {
           </div>
           <div className="field">
             <p className="control">
-              <button className="button is-normal">Login</button>
+              <button className="button is-normal" type="submit">Login</button>
               <button className="button signUpBtn is-normal " onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</button>
             </p>
           </div>
         </form>
       </div>
+      <p className="error-message">&nbsp;{error}</p>
     </>
   );
 }

@@ -2,7 +2,6 @@ import { Link, NavLink } from 'react-router-dom';
 import * as userService from '../../utilities/users-service';
 import { Navbar, Nav, NavbarBrand, Container } from 'react-bootstrap';
 import { Animated } from "react-animated-css";
-import { fadeInUp } from 'react-animated-css';
 import './NavBar.css';
 
 export default function NavBar({ user, setUser }) {
@@ -17,16 +16,19 @@ export default function NavBar({ user, setUser }) {
       { user ?
         <>
           <Navbar>
-            <Container>
-              <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
-                <img
-                  alt="AkinaSpeedLogo"
-                  src="https://i.imgur.com/IMmZb8D.png"
-                  height="45"
-                  width="185"
-                  className="mainLogo d-inline-block align-top"
-                />
-              </Animated>
+            <Container id="usrNav">
+              <NavbarBrand href="/">
+                <Animated animationIn="bounceInLeft" animationOut="fadeOut" isVisible={true}>
+
+                  <img
+                    alt="AkinaSpeedLogo"
+                    src="https://i.imgur.com/IMmZb8D.png"
+                    height="45"
+                    width="185"
+                    className="mainLogo d-inline-block align-top"
+                  />
+                </Animated>
+              </NavbarBrand>
               <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders">Order History</NavLink>
               &nbsp; | &nbsp;
               <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders/new">New Order</NavLink>

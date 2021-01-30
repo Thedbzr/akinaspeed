@@ -223,7 +223,7 @@ hr {
   color: gray;
   width: 100vw;
   padding: 5vmin 20vmin 5vmin 20vmin;
-  margin-top: 10vmin;
+  /* margin-top: 10vmin; */
   left:0;
   bottom:0;
   right:0;
@@ -247,4 +247,16 @@ hr {
 .button {
   background-color: var(--redBright);
   color: white;
+}
+#usrNav {
+  display: flex !important;
+}
+.crgrid{
+  display: grid;
+  padding: 5vmin;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows:inherit
+}
+.card {
+ margin: 0 2vmin;
 }
