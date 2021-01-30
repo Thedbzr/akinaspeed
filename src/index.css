@@ -254,9 +254,25 @@ hr {
 .crgrid{
   display: grid;
   padding: 5vmin;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows:inherit
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-rows:inherit;
+  grid-row-gap: 5vmin;
 }
 .card {
  margin: 0 2vmin;
+}
+.itemName {
+  font-weight: bolder;
+}
+.itemHr{
+  margin: 0;
+  background-color: white;
+  margin-top: 1rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+}
+.cardfooter {
+  margin: 0;
+  padding: 1.3rem;
+  background-color: #eaeaeac2;
 }
