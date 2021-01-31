@@ -1,0 +1,38 @@
+.OrderListItem {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3vmin;
+    padding: 5vmin;
+    color: var(--text-light);
+    background-color: var(--white);
+    border: .1vmin solid white;
+    border-radius: 1vmin;
+    font-size: 3vmin;
+  }
+
+  
+  .OrderListItem .buy {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .OrderListItem .buy span {
+    font-size: 1.7vw;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  .OrderListItem .name {
+    font-size: 2vw;
+    text-align: center;
+    color: var(--text-light);
+  }
+  
+  
+  
+  .OrderListItem.selected {
+    border-color: var(--redBright);
+    border-width: .2vmin;
+  }

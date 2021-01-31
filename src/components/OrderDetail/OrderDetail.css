@@ -1,0 +1,19 @@
+.OrderDetail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vmin;
+    font-size: 2vmin;
+    color: var(--text-light);
+}
+.section-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-color: lightgray;
+    border-radius: 12px;
+    padding: .6vmin;
+    text-align: center;
+    font-size: 2vmin;
+}

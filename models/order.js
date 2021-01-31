@@ -40,6 +40,20 @@ orderSchema.virtual('orderId').get(function () {
   return this.id.slice(-6).toUpperCase();
 });
 
+orderSchema.virtual('orderDate').get(function() {
+  console.log(this.createdAt)
+  return this.createdAt.toLocaleDateString()
+})
+
+orderSchema.statics.getUserOrders = async function (userId) {
+  // 'this' is bound to the model (don't use an arrow function)
+  // return the promise that resolves to a cart (unpaid order)
+  return this.find(
+    // query
+    { user: userId, isPaid: true },  
+  );
+};
+
 // statics are callable on the model, not an instance (document)
 orderSchema.statics.getCart = async function (userId) {
   // 'this' is bound to the model (don't use an arrow function)
