@@ -308,3 +308,37 @@ img {
 .mainLogo:hover{
   background-color: black !important;
 }
+.cartContainer{
+  display: grid;
+  grid-template-columns: 1.5fr .5fr;
+  grid-gap: 10vmin 10vmin;
+  padding: 5vmin;
+}
+.tableHead{
+  background-color: lightgray !important;
+  border-radius: 12px;
+}
+
+table th:first-child{
+  border-radius:10px 0 0 10px;
+}
+
+table th:last-child{
+  border-radius:0 10px 10px 0;
+}
+.cartTH{
+  border-radius:10px 0 0 10px !important;
+  border-radius:0 10px 10px 0 !important;
+}
+.cartTH > tr > th {
+  background-color: var(--redBright);
+  color: white;
+}
+.cartTF{
+  border-radius:10px 0 0 10px !important;
+  border-radius:0 10px 10px 0 !important;
+  background-color: lightgrey !important;
+}
+.is-fullwidth {
+  border-radius: 12px !important;
+}

@@ -33,6 +33,8 @@ export default function NavBar({ user, setUser }) {
               &nbsp; | &nbsp;
               <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders/new">New Order</NavLink>
                 &nbsp; | &nbsp;
+              <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders/cart">Cart</NavLink>
+                &nbsp; | &nbsp;
               <span>Welcome, {user.name}</span>
                 &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
             </Container>
