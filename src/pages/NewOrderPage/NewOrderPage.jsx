@@ -17,7 +17,7 @@ export default function NewOrderPage({ user, setUser }) {
   // Use history object to change routes programmatically
   const history = useHistory();
 
-  useEffect(function() {
+  useEffect(function () {
     async function getItems() {
       const items = await itemsAPI.getAll();
       categoriesRef.current = items.reduce((cats, item) => {
@@ -66,11 +66,11 @@ export default function NewOrderPage({ user, setUser }) {
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
+      <OrderDetail
+        order={cart}
+        handleChangeQty={handleChangeQty}
+        handleCheckout={handleCheckout}
+      />
     </main>
   );
 }
-{/* <OrderDetail
-  order={cart}
-  handleChangeQty={handleChangeQty}
-  handleCheckout={handleCheckout}
-/> */}

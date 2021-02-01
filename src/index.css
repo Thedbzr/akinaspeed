@@ -183,10 +183,7 @@ button[type="submit"] {
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
-.mainLogo {
-  text-align: center;
-  justify-content: center;
-}
+
 #root > main > main > nav > div {
   align-items: center;
 }
@@ -254,7 +251,7 @@ hr {
 .crgrid{
   display: grid;
   padding: 5vmin;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows:inherit;
   grid-row-gap: 5vmin;
 }
@@ -280,4 +277,34 @@ hr {
   display:block;
   width:100%; 
   height:auto;
+}
+a {
+  color: white;
+}
+a:hover {
+  background-color: black;
+  color: white;
+}
+a:active {
+  color: #616161;;
+  border-radius: 12px;
+  padding: 1vmin;
+}
+#text {
+  color: white;
+}
+#root > main > main > nav > div {
+  color: white;
+}
+img {
+  background-color: none !important;
+}
+.mainLogo {
+  text-align: center;
+  justify-content: center;
+  background-color: black;
+}
+
+.mainLogo:hover{
+  background-color: black !important;
 }

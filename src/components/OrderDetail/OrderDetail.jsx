@@ -30,7 +30,9 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             {lineItems}
             <section className="total">
               {order.isPaid ?
-                <span className="right">TOTAL&nbsp;&nbsp;</span>
+              
+                <span className="left">TOTAL&nbsp;&nbsp;</span>
+             
                 :
                 <button
                   className="btn-sm"
