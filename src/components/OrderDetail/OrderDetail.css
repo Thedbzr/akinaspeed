@@ -1,0 +1,30 @@
+.OrderDetail {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3vmin;
+    font-size: 2vmin;
+    color: var(--text-light);
+}
+.section-heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background-color: lightgray;
+    border-radius: 12px;
+    padding: .6vmin;
+    text-align: center;
+    font-size: 2vmin;
+}
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+.total {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr;
+    color: var(--text-light);
+    border-top: .1vmin solid var(--tan-3);
+}
