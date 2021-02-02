@@ -57,7 +57,7 @@ export default function NewOrderPage({ user, setUser, handleAddToOrder,  categor
     <main className="NewOrderPage">
       <aside>
         <CategoryList
-          categories={categories.current}
+          categories={categoriesRef.current}
           activeCat={activeCat}
           setActiveCat={setActiveCat}
         />
