@@ -29,7 +29,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
     <>
       <div className="table-container">
         <table className="table">
-          <thead>
+          <thead className="tableHead">
             <tr>
               <th>Product</th>
               <th>Price</th>
@@ -41,7 +41,19 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
             <tr>
               <td><span><img className="cellImg" src={lineItem.item.url} alt="item photo" />{lineItem.item.name}</span></td>
               <td><span>{lineItem.item.price.toFixed(2)}</span></td>
-              <td><span>{lineItem.qty}</span></td>
+              <td>
+                {!isPaid &&
+                  <button
+                    className="button qtyButton is-small"
+                    onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty - 1)}
+                  >−</button>
+                }
+                <span>{lineItem.qty}</span>{!isPaid &&
+                  <button
+                    className="button qtyButton is-small"
+                    onClick={() => handleChangeQty(lineItem.item._id, lineItem.qty + 1)}
+                  >+</button>
+                }</td>
               <td><div className="ext-price">${lineItem.extPrice.toFixed(2)}</div></td>
             </tr>
           </tbody>

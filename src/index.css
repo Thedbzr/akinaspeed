@@ -278,7 +278,7 @@ hr {
   width:100%; 
   height:auto;
 }
-a {
+/* a {
   color: white;
 }
 a:hover {
@@ -289,7 +289,7 @@ a:active {
   color: #616161;;
   border-radius: 12px;
   padding: 1vmin;
-}
+} */
 #text {
   color: white;
 }
@@ -342,3 +342,6 @@ table th:last-child{
 .is-fullwidth {
   border-radius: 12px !important;
 }
+/* .qtyButton {
+  padding: .5rem;
+} */

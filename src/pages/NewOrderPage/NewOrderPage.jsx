@@ -66,11 +66,11 @@ export default function NewOrderPage({ user, setUser, cart, handleAddToOrder, ha
         menuItems={menuItems.filter(item => item.category.name === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
-      <OrderDetail
-        order={cart}
-        handleChangeQty={handleChangeQty}
-        handleCheckout={handleCheckout}
-      />
     </main>
   );
 }
+{/* <OrderDetail
+  order={cart}
+  handleChangeQty={handleChangeQty}
+  handleCheckout={handleCheckout}
+/> */}

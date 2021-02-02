@@ -83,7 +83,11 @@ export default function App() {
               />
             </Route>
             <Route exact path="/orders/cart">
-              <CartPage />
+              <CartPage 
+              order={cart}
+              handleChangeQty={handleChangeQty}
+              handleCheckout={handleCheckout}
+              />
             </Route>
             <Route exact path="/orders">
               <OrderHistoryPage />
