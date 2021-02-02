@@ -1,0 +1,10 @@
+#cartLineItems img {
+    height: auto;
+    width: 30vmin;
+}
+#cartLineItems {
+  display: grid;
+  grid-template-columns: 1.5fr .5fr;
+  grid-gap: 10vmin 10vmin;
+  padding: 5vmin;
+}

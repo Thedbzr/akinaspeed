@@ -278,6 +278,9 @@ hr {
   width:100%; 
   height:auto;
 }
+#cartLineItems > div:nth-child(1) > div > table > tbody > tr > td:nth-child(1) {
+  text-align: left;
+}
 /* a {
   color: white;
 }

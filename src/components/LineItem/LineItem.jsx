@@ -39,7 +39,7 @@ export default function LineItem({ lineItem, isPaid, handleChangeQty }) {
           </thead>
           <tbody>
             <tr>
-              <td><span><img className="cellImg" src={lineItem.item.url} alt="item photo" />{lineItem.item.name}</span></td>
+              <td><span className="cellImgText"><img className="cellImg" src={lineItem.item.url} alt="item photo" />{lineItem.item.name}</span></td>
               <td><span>{lineItem.item.price.toFixed(2)}</span></td>
               <td>
                 {!isPaid &&
