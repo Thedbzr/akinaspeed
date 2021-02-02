@@ -69,7 +69,7 @@ export default function LogIn({ setUser, setShowLogin, showLogin }) {
           <div className="field">
             <p className="control">
               <button className="button is-normal" type="submit">Login</button>
-              <button className="button signUpBtn is-normal " onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</button>
+              {/* <button className="button signUpBtn is-normal " onClick={() => setShowLogin(!showLogin)}>{showLogin ? 'SIGN UP' : 'LOG IN'}</button> */}
             </p>
           </div>
         </form>
