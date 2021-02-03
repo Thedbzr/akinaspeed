@@ -20,16 +20,6 @@ export default function App() {
   // Use history object to change routes programmatically
   const history = useHistory();
 
-  
-  // useEffect(function () {
-  //   // Load cart (a cart is the unpaid order for the logged in user)
-  //   async function getCart() {
-  //     const cart = await ordersAPI.getCart();
-  //     setCart(cart);
-  //   }
-  //   getCart();
-  // }, []);
-
   /*--- Event Handlers --- */
   async function handleAddToOrder(itemId) {
     const cart = await ordersAPI.addItemToCart(itemId);

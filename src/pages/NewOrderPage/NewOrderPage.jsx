@@ -11,11 +11,8 @@ import UserLogOut from '../../components/UserLogOut/UserLogOut';
 export default function NewOrderPage({ user, setUser, handleAddToOrder,  categories }) {
   const [menuItems, setMenuItems] = useState([]);
   const [activeCat, setActiveCat] = useState('');
-  // const [cart, setCart] = useState(null);
-  const categoriesRef = useRef([]);
 
-  // Use history object to change routes programmatically
-  // const history = useHistory();
+  const categoriesRef = useRef([]);
 
   useEffect(function () {
     async function getItems() {
@@ -28,30 +25,7 @@ export default function NewOrderPage({ user, setUser, handleAddToOrder,  categor
       setActiveCat(items[0].category.name);
     }
     getItems();
-
-    // // Load cart (a cart is the unpaid order for the logged in user)
-    // async function getCart() {
-    //   const cart = await ordersAPI.getCart();
-    //   setCart(cart);
-    // }
-    // getCart();
   }, []);
-
-  // /*--- Event Handlers --- */
-  // async function handleAddToOrder(itemId) {
-  //   const cart = await ordersAPI.addItemToCart(itemId);
-  //   setCart(cart);
-  // }
-
-  // async function handleChangeQty(itemId, newQty) {
-  //   const cart = await ordersAPI.setItemQtyInCart(itemId, newQty);
-  //   setCart(cart);
-  // }
-
-  // async function handleCheckout() {
-  //   await ordersAPI.checkout();
-  //   history.push('/orders');
-  // }
 
   return (
     <main className="NewOrderPage">
@@ -69,8 +43,3 @@ export default function NewOrderPage({ user, setUser, handleAddToOrder,  categor
     </main>
   );
 }
-{/* <OrderDetail
-  order={cart}
-  handleChangeQty={handleChangeQty}
-  handleCheckout={handleCheckout}
-/> */}

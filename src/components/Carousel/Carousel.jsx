@@ -15,9 +15,8 @@ export default function ControlledCarousel() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            //wide bannerr
+            //wide banner
             src="https://i.imgur.com/j5SW4FW.png"
-            // src="https://i.imgur.com/LCSEAKP.png"
             alt="First slide"
             />
         </Carousel.Item>
@@ -26,7 +25,6 @@ export default function ControlledCarousel() {
             className="d-block w-100"
             //wide banner
             src="https://i.imgur.com/oQG8wWK.png"
-            // src="https://i.imgur.com/7fFqWGB.png"
             alt="Second slide"
             />
         </Carousel.Item>
@@ -35,7 +33,6 @@ export default function ControlledCarousel() {
             className="d-block w-100"
             //wide banner
             src="https://i.imgur.com/KIQjpUQ.png"
-            // src="https://i.imgur.com/iqkbxPs.png"
             alt="Third slide"
           />
         </Carousel.Item>
