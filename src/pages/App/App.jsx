@@ -70,6 +70,8 @@ export default function App() {
             <Route exact path="/orders/cart">
               <CartPage 
               order={cart}
+              cart={cart}
+              setCart={setCart}
               handleChangeQty={handleChangeQty}
               handleCheckout={handleCheckout}
               />

@@ -348,3 +348,16 @@ table th:last-child{
 /* .qtyButton {
   padding: .5rem;
 } */
+
+.navLinkTags {
+  color: white;
+  border: 5px black solid;
+  border-radius: 12px;
+  padding:1vmin;
+}
+a:hover{
+  color: white;
+}
+.findMods{
+  height: 80vh;
+}

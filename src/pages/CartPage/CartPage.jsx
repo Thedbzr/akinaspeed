@@ -1,7 +1,19 @@
 import LineItem from '../../components/LineItem/LineItem';
 import './CartPage.css'
+import { useEffect} from 'react';
+import * as ordersAPI from '../../utilities/orders-api';
 
-export default function CartPage({ order, handleChangeQty, handleCheckout }) {
+export default function CartPage({ order,setCart, handleChangeQty, handleCheckout }) {
+
+    useEffect(function () {
+        // Load cart (a cart is the unpaid order for the logged in user)
+        async function getCart() {
+            const cart = await ordersAPI.getCart();
+            setCart(cart);
+        }
+        getCart();
+    }, []);
+
     if (!order) return null;
 
     const lineItems = order.lineItems.map(item =>
@@ -69,7 +81,7 @@ export default function CartPage({ order, handleChangeQty, handleCheckout }) {
                         </div>
                     </>
                     :
-                    <div className="hungry">Lets Find Some Mods!</div>
+                    <div className="findMods">Lets Find Some Mods!</div>
                 }
             </div>
         </>

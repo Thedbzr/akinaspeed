@@ -29,14 +29,14 @@ export default function NavBar({ user, setUser }) {
                   />
                 </Animated>
               </NavbarBrand>
-              <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders">Order History</NavLink>
+              <NavLink className="navLinkTags" exact activeStyle={{ backgroundColor: 'red' }} to="/orders">Order History</NavLink>
               &nbsp; | &nbsp;
-              <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders/new">New Order</NavLink>
+              <NavLink className="navLinkTags"  exact activeStyle={{ backgroundColor: 'red' }} to="/orders/new">New Order</NavLink>
                 &nbsp; | &nbsp;
-              <NavLink exact activeStyle={{ backgroundColor: 'red' }} to="/orders/cart">Cart</NavLink>
+              <NavLink  className="navLinkTags" exact activeStyle={{ backgroundColor: 'red' }} to="/orders/cart">Cart</NavLink>
                 &nbsp; | &nbsp;
               <span>Welcome, {user.name}</span>
-                &nbsp;&nbsp;<Link to="" onClick={handleLogOut}>Log Out</Link>
+                &nbsp;&nbsp;<Link className="navLinkTags" activeStyle={{ backgorundColor: 'red' }} to="" onClick={handleLogOut}>Log Out</Link>
             </Container>
           </Navbar>
         </>
