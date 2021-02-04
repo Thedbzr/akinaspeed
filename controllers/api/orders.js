@@ -7,7 +7,14 @@ module.exports = {
   setItemQtyInCart,
   checkout,
   getOrders,
+  delete: deleteOne,
 };
+
+async function deleteOne(req,res) {
+  const deleteOrder = await Order.findByIdAndRemove(req.params.id);
+  res.status(200).json(deleteOrder)
+}
+
 
 async function getOrders(req, res) {
   const orders = await Order.getUserOrders(req.user._id);

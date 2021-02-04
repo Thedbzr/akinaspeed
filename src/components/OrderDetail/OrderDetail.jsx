@@ -1,8 +1,16 @@
 import './OrderDetail.css';
 import LineItem from '../LineItem/LineItem';
+import * as ordersAPI from '../../utilities/orders-api';
 
 // Used to display the details of any order, including the cart (unpaid order)
-export default function OrderDetail({ order, handleChangeQty, handleCheckout }) {
+export default function OrderDetail({ order, handleChangeQty, handleCheckout, setOrderHistory, orderHistory}) {
+
+  async function handleDeleteOne(order){
+    await ordersAPI.deleteOne(order);
+    setOrderHistory(orderHistory.filter(o => o._id !== order));
+  }
+
+
   if (!order) return null;
 
   const lineItems = order.lineItems.map(item =>
@@ -30,9 +38,10 @@ export default function OrderDetail({ order, handleChangeQty, handleCheckout }) 
             {lineItems}
             <section className="total">
               {order.isPaid ?
-              
+              <>
+                <button onClick={() => handleDeleteOne(order)} className="button is-small halfWidth">Delete Order History</button>
                 <span className="left">TOTAL&nbsp;&nbsp;</span>
-             
+              </>
                 :
                 <button
                   className="btn-sm"

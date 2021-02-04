@@ -24,7 +24,7 @@
 .total {
     width: 100%;
     display: grid;
-    grid-template-columns: 5fr 1fr 1fr;
+    grid-template-columns: 5fr 1fr 1fr 1fr;
     color: var(--text-light);
     border-top: .1vmin solid var(--tan-3);
 }

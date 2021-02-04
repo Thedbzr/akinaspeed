@@ -29,3 +29,7 @@ export function checkout() {
 export function getOrders() {
   return sendRequest(BASE_URL);
 }
+
+export function deleteOne(order){
+  return sendRequest(`${BASE_URL}/${order._id}`, 'DELETE', order)
+}
