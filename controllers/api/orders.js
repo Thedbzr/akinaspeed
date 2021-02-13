@@ -12,7 +12,8 @@ module.exports = {
 
 async function deleteOne(req,res) {
   const deleteOrder = await Order.findByIdAndRemove(req.params.id);
-  res.status(200).json(deleteOrder)
+  const orders = await Order.getUserOrders(req.user._id);
+  res.json(orders);
 }
 
 

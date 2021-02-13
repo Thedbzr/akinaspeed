@@ -36,7 +36,7 @@ export default function OrderHistoryPage({ user, setUser }) {
         activeOrder={activeOrder} 
         setActiveOrder={setActiveOrder}
         />
-      <OrderDetail order={activeOrder} setOrderHistory={setOrderHistory} orderHistory={orderHistory}/>
+      <OrderDetail order={activeOrder} setOrderHistory={setOrderHistory} orderHistory={orderHistory} setActiveOrder={setActiveOrder}/>
     </main>
   );
 }
